@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/bg"
+    tools:context="com.example.asus.iso.MainActivity" >
+
+
+    <RelativeLayout android:layout_width="fill_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bg_transparent_white">
+
+        <ListView android:id="@+id/listView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@drawable/bg_transparent_white"
+            android:cacheColorHint="#00000000"
+            android:padding="5dp"
+            android:scrollingCache="false"
+            android:layout_above="@+id/button1" />
+
+        <Button android:id="@+id/button1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_toLeftOf="@+id/textView1"
+            android:background="#00893d"
+            android:onClick="Tambah"
+            android:text="TAMBAH"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+        <TextView android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_centerHorizontal="true"
+            android:text="-" />
+
+        <Button android:id="@+id/Button01"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_toRightOf="@+id/textView1"
+            android:background="@android:color/holo_blue_dark"
+            android:onClick="Reload" android:text="RELOAD"
+            android:textColor="#FFFFFF"
+            android:textStyle="bold" />
+
+    </RelativeLayout >
+
+
+
+</RelativeLayout >
+

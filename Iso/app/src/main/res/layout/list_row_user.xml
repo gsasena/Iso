@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent" android:layout_height="wrap_content"
+    android:layout_marginTop="10dp" android:background="@drawable/bg_grey" android:padding="0dp" >
+
+    <TextView android:id="@+id/tvNamaUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_marginLeft="3dp"
+        android:layout_toRightOf="@+id/tvNomor"
+        android:gravity="left|center_vertical"
+        android:text="Nama"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+    <TextView android:id="@+id/tvEmail"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvNamaUser"
+        android:layout_marginTop="2dip"
+        android:layout_toRightOf="@+id/tvNomor"
+        android:text="email"
+        android:textColor="#000000"
+        android:textSize="15dp"
+        android:textStyle="italic" />
+
+
+    <TextView android:id="@+id/tvTipeUser"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/tvEmail"
+        android:layout_marginBottom="5dp"
+        android:layout_marginTop="1dip"
+        android:layout_toRightOf="@+id/tvNomor"
+        android:text="mmm"
+        android:textColor="@android:color/holo_blue_dark"
+        android:gravity="right"
+        android:textSize="15dp"
+        android:paddingRight="10dp"
+        android:textStyle="bold" />
+    <TextView android:id="@+id/tvNomor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_marginLeft="3dp"
+        android:layout_marginRight="2dp"
+        android:gravity="left"
+        android:text="0"
+        android:textColor="#000000"
+        android:textSize="20dp"
+        android:textStyle="bold" />
+
+</RelativeLayout >

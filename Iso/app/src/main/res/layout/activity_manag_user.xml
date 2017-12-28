@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent" android:layout_height="fill_parent" android:background="@drawable/bg" >
+
+    <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="10dp" android:background="@drawable/bg_transparent_white" >
+
+        <RelativeLayout android:layout_width="fill_parent" android:layout_height="fill_parent" android:padding="10dp" android:background="@drawable/bg_transparent_white" >
+
+            <Button android:id="@+id/btnSimpan" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/spinner1" android:layout_below="@+id/spinner1" android:layout_marginTop="14dp" android:layout_toLeftOf="@+id/textView2" android:background="#00893d" android:onClick="Simpan" android:text="SIMPAN" android:textColor="#FFFFFF" android:textStyle="bold" />
+
+            <EditText android:id="@+id/txtNama" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/textView3" android:layout_alignRight="@+id/textView3" android:layout_below="@+id/textView3" android:ems="10" android:hint="Nama User" >
+
+                <requestFocus/>
+            </EditText >
+
+            <Spinner android:id="@+id/spinner1" android:layout_width="fill_parent" android:layout_height="wrap_content" android:layout_alignLeft="@+id/textView1" android:entries="@array/tipeUser" android:layout_below="@+id/textView1" />
+
+            <TextView android:id="@+id/textView3" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignParentRight="true" android:layout_alignParentTop="true" android:text="Input Nama User" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/txtUsername" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignRight="@+id/txtNama" android:layout_below="@+id/TextView01" android:ems="10" android:hint="Username" />
+
+            <TextView android:id="@+id/TextView01" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/txtUsername" android:layout_below="@+id/txtNama" android:layout_marginTop="19dp" android:text="Username" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/txtPassword" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignRight="@+id/txtUsername" android:layout_below="@+id/TextView02" android:inputType="textPassword" android:ems="10" android:hint="Password" />
+
+            <TextView android:id="@+id/TextView02" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/txtPassword" android:layout_below="@+id/txtUsername" android:layout_marginTop="22dp" android:text="Password" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <EditText android:id="@+id/txtEmail" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_alignRight="@+id/textView1" android:layout_below="@+id/TextView03" android:inputType="textEmailAddress" android:ems="10" android:hint="Email" />
+
+            <TextView android:id="@+id/TextView03" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignParentLeft="true" android:layout_below="@+id/txtPassword" android:layout_marginTop="22dp" android:text="Email" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView android:id="@+id/textView1" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignLeft="@+id/TextView03" android:layout_alignRight="@+id/txtPassword" android:layout_below="@+id/txtEmail" android:text="Tipe User" android:textAppearance="?android:attr/textAppearanceMedium" />
+
+            <TextView android:id="@+id/textView2" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/btnSimpan" android:layout_centerHorizontal="true" android:visibility="invisible" android:text="TextView"/>
+
+            <Button android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_alignBottom="@+id/textView2" android:layout_alignRight="@+id/spinner1" android:layout_toRightOf="@+id/textView2" android:background="#ffff4444" android:onClick="Kembali" android:text="KEMBALI" android:textColor="#FFFFFF" android:textStyle="bold" />
+
+        </RelativeLayout >
+    </RelativeLayout >
+
+</RelativeLayout >
